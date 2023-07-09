@@ -1,8 +1,6 @@
 package com.openparty.controller;
 
-import com.openparty.model.Manifesto;
 import com.openparty.service.OpenPartyService;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +14,7 @@ public class OpenPartyController {
     private OpenPartyService openPartyService;
 
     @GetMapping("/getManifestoData")
-    public List<Manifesto> getManifestoData() {
+    public String getManifestoData() {
         return openPartyService.getManifestoData();
     }
 
