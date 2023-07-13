@@ -10,3 +10,4 @@ public class OpenPartyApp {
         SpringApplication.run(OpenPartyApp.class, args);
     }
 }
+
